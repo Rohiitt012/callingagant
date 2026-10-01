@@ -1,0 +1,12 @@
+[
+  {
+    "id": "LEAD-101",
+    "name": "Rahul Sharma",
+    "phone": "+91 98765 43210",
+    "queryCategory": "Appointment Booking",
+    "status": "Appointment Scheduled",
+    "timestamp": "2026-10-01T09:01:13.196Z",
+    "whatsappSent": true,
+    "notes": "Booked slot for tomorrow 4:00 PM."
+  }
+]

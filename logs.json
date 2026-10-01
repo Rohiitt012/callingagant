@@ -1,0 +1,28 @@
+[
+  {
+    "id": "CALL-9842",
+    "phoneNumber": "+91 98765 43210",
+    "timestamp": "2026-10-01T09:01:13.197Z",
+    "duration": "1m 45s",
+    "status": "Completed",
+    "sentiment": "Positive",
+    "summary": "Customer asked about location and office timings.",
+    "transcript": [
+      {
+        "speaker": "Agent",
+        "text": "Namaste! Aapne 9210728686 pe call kiya hai. Main Aisha hoon.",
+        "time": "00:02"
+      },
+      {
+        "speaker": "Caller",
+        "text": "Haan hello, aapka office kahan par hai?",
+        "time": "00:08"
+      },
+      {
+        "speaker": "Agent",
+        "text": "Humara main office New Delhi mein hai. Subah 9 se raat 8 baje tak khula rehta hai.",
+        "time": "00:16"
+      }
+    ]
+  }
+]

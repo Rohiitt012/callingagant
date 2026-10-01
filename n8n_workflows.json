@@ -1,0 +1,88 @@
+{
+  "name": "AI Call Automation Workflow (9210728686)",
+  "nodes": [
+    {
+      "id": "node-1",
+      "name": "Twilio/Exotel Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "position": [
+        100,
+        200
+      ],
+      "parameters": {
+        "path": "voice-incoming-9210728686",
+        "options": {}
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "Gemini AI Agent",
+      "type": "n8n-nodes-base.googleGemini",
+      "position": [
+        350,
+        200
+      ],
+      "parameters": {
+        "model": "gemini-1.5-pro",
+        "prompt": "Respond to customer caller in Hindi/English for 9210728686"
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "WhatsApp Dispatcher",
+      "type": "n8n-nodes-base.whatsApp",
+      "position": [
+        600,
+        100
+      ],
+      "parameters": {
+        "operation": "sendMessage",
+        "phoneNumber": "={{ $json.callerNumber }}"
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "Google Sheets CRM",
+      "type": "n8n-nodes-base.googleSheets",
+      "position": [
+        600,
+        300
+      ],
+      "parameters": {
+        "operation": "append",
+        "sheetName": "Leads_9210728686"
+      }
+    }
+  ],
+  "connections": {
+    "Twilio/Exotel Webhook": {
+      "main": [
+        [
+          {
+            "node": "Gemini AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini AI Agent": {
+      "main": [
+        [
+          {
+            "node": "WhatsApp Dispatcher",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Google Sheets CRM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

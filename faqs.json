@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "question": "Office ya shop kahan par hai?",
+    "keywords": [
+      "location",
+      "address",
+      "kahan",
+      "office",
+      "pata",
+      "place",
+      "where"
+    ],
+    "answer": "Humara main office New Delhi mein hai. Aap Monday se Saturday, subah 9 baje se raat 8 baje ke beech aa sakte hain."
+  },
+  {
+    "id": "2",
+    "question": "Working hours aur timings kya hain?",
+    "keywords": [
+      "time",
+      "timing",
+      "hours",
+      "open",
+      "close",
+      "kab",
+      "baje"
+    ],
+    "answer": "Humara office Monday se Saturday, subah 9 baje se raat 8 baje tak khula rehta hai. Sunday ko chutti rehti hai."
+  },
+  {
+    "id": "3",
+    "question": "Services aur pricing details kya hain?",
+    "keywords": [
+      "service",
+      "price",
+      "rate",
+      "cost",
+      "pricing",
+      "kitna",
+      "charges"
+    ],
+    "answer": "Hum consultation aur customer support services provide karte hain. Main pricing ki poori detail aapke WhatsApp par bhej raha hoon."
+  },
+  {
+    "id": "4",
+    "question": "Appointment book karna hai",
+    "keywords": [
+      "appointment",
+      "book",
+      "booking",
+      "slot",
+      "milna",
+      "schedule"
+    ],
+    "answer": "Ji bilkul! Aapka appointment kal 4 baje ke liye confirm kar diya gaya hai. Confirmation message WhatsApp par bhej diya hai."
+  }
+]
